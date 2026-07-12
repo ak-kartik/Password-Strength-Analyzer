@@ -1,0 +1,12 @@
+Scan for Open Ports
+nmap 192.168.1.1
+
+Identify Software Versions
+nmap -sV 192.168.1.1
+
+Vulnerability Scan
+nmap --script vuln 192.168.1.1
+
+
+Save Report
+nmap -sV --script vuln 192.168.1.1 -oN report.txt
